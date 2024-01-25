@@ -1,96 +1,104 @@
-{"intents": [
-	{"tag": "greeting",
-     "patterns": ["Hi", "Hey", "Is anyone there?", "Hello", "Hay", "Sasa", "Good Evening", "Good afternoon"],
-     "responses": ["Hello how can i help you today", "Hi how can i help you today", "Hi there how can i help you today"]
-    },
-    {"tag": "goodbye",
-     "patterns": ["Bye", 
-     "See you later", 
-     "Goodbye"],
-     "responses": ["See you later", 
-     "Have a nice day",
-      "Bye! Come back again"]
-    },
-    {"tag": "thanks",
-     "patterns": ["Thanks", 
-     "Thank you",
-      "That's helpful", 
-      "Thanks for the help"],
-     "responses": ["Happy to help!",
-     "Any time!",
-      "My pleasure",
-       "You're most welcome!"]
-    },
-    {"tag": "about",
-     "patterns": ["Who are you?", 
-     "What are you?", 
-     "Who you are?" ],
-     "responses": ["I am a KABUO virtual assistant", 
-     "I'm KABUO chatbot"]
- },
-
- {"tag": "passwords",
-    "patterns": ["How can i reset my password",
-    "wrong username or password"
-     "I forgot my password", "how to deactivate an account", 
-   "Forgot password kindly assist", 
-   "I cant log in with default password 1234",
-    "I have not been able to have my password reset. Kindly facilitate",
-  "Please reset ",
-  "Kindly reset the password",
-  "What should I do coz I can't remember old password",
-  "I have not received a notification on password change",
-  "How can I do a self reset of my password"],
-
-    "responses": [ 
-    "Reset done use default password 1234 and change.",
-    "Use the forgot password functionality to reset your password.",
-    "check if you are using the right username, Your username should be your registration number in Capital letters"
-    "Use the forgot password functionality with your email  to reset your account."]
-   },
-
-   {"tag": "Authentication",
-        "patterns": ["Cant join meeting. Authentication failed",
-        "I cant join the zoom meeting",
-        "I got an error of Authentication failed",
-        "unable to join zoom meeting"],
-
-    "responses": [
-        "sign in with your kabarak email",
-        "Use the zoom official website"
-    ]},
-
-    {"tag": "audio/video",
-        "patterns": ["i am having trouble with my audio",
-        "I am having trouble with my video",
-        "Cant hear the speaker in zoom"],
-
-        "responses": [
-            "Double check that your speakers, michrophone and webcam are turned on and functioning properly. Ensure they are connented to the correct device settings in zoom",
-            "leave the meeting and rejoin"
-        ]},
-
-        {"tag": ""},
-
-
-
-
-
-
-
-
-        {"tag": "login",
-            "patterns": ["How do I log in to the Moodle",
-                "What is moodle"],
-
-            "responses": ["click on this link: https://moodle.kabarak.ac.ke/login",
-            "Moodle is a student online learning platform. it is found here: https://moodle.kabarak.ac.ke/login"]},
-
-        {}
-
-
-
-
-
-]
-}
+{
+    "intents": [
+      {
+        "tag": "greeting",
+        "patterns": ["Hi", "Hey", "Is anyone there?", "Hello", "Hay", "Sasa", "Good Evening", "Good afternoon"],
+        "responses": ["Hello how can I help you today?", "Hi how can I help you today?", "Hi there how can I help you today?"]
+      },
+      {
+        "tag": "goodbye",
+        "patterns": ["Bye", "See you later", "Goodbye"],
+        "responses": ["See you later", "Have a nice day", "Bye! Come back again"]
+      },
+      {
+        "tag": "thanks",
+        "patterns": ["Thanks", "Thank you", "That's helpful", "Thanks for the help"],
+        "responses": ["Happy to help!", "Any time!", "My pleasure", "You're most welcome!"]
+      },
+      {
+        "tag": "about",
+        "patterns": ["Who are you?", "What are you?", "Who you are?"],
+        "responses": ["I am a KABUO virtual assistant", "I'm KABUO chatbot"]
+      },
+      {
+        "tag": "passwords",
+        "patterns": ["How can I reset my password", "wrong username or password", "I forgot my password", "how to deactivate an account", "Forgot password kindly assist", "I can't log in with default password 1234", "I have not been able to have my password reset. Kindly facilitate", "Please reset ", "Kindly reset the password", "What should I do coz I can't remember old password", "I have not received a notification on password change", "How can I do a self reset of my password"],
+        "responses": ["Reset done use default password 1234 and change.", "Use the forgot password functionality to reset your password.", "check if you are using the right username, Your username should be your registration number in Capital letters", "Use the forgot password functionality with your email to reset your account."]
+      },
+      {
+        "tag": "Authentication",
+        "patterns": ["Can't join meeting. Authentication failed", "I can't join the zoom meeting", "I got an error of Authentication failed", "unable to join zoom meeting"],
+        "responses": ["sign in with your kabarak email", "Use the zoom official website"]
+      },
+      {
+        "tag": "audio/video",
+        "patterns": ["I am having trouble with my audio", "I am having trouble with my video", "Can't hear the speaker in zoom"],
+        "responses": ["Double check that your speakers, microphone and webcam are turned on and functioning properly. Ensure they are connected to the correct device settings in zoom", "leave the meeting and rejoin"]
+      },
+      {
+        "tag": "login",
+        "patterns": ["How do I log in to the Moodle", "What is Moodle"],
+        "responses": ["Click on this link: https://moodle.kabarak.ac.ke/login", "Moodle is a student online learning platform. It is found here: https://moodle.kabarak.ac.ke/login"]
+      },
+      {
+        "tag": "exam_technical_issues",
+        "patterns": ["What happens if I encounter technical issues during the exam?", "I'm having technical issues with the exam"],
+        "responses": ["Please contact your course instructor or technical support for assistance with technical issues during the exam."]
+      },
+      {
+        "tag": "exam_additional_time",
+        "patterns": ["How do I request additional time or accommodations?", "I need more time for my exam"],
+        "responses": ["You can request additional time or accommodations by contacting your course instructor or academic advisor."]
+      },
+      {
+        "tag": "exam_academic_dishonesty",
+        "patterns": ["What are the consequences of academic dishonesty in LockDown Browser?", "I'm worried about academic dishonesty"],
+        "responses": ["Academic dishonesty can result in serious penalties, including failing the course and being reported to the academic department. It is important to understand these consequences and to follow the academic integrity policies of your institution."]
+      },
+      {
+        "tag": "exam_navigation",
+        "patterns": ["How do I navigate between exam questions in LockDown Browser?", "I can't find my place in the exam"],
+        "responses": ["You can navigate between exam questions by using the navigation buttons provided in the exam interface."]
+      },
+      {
+        "tag": "respondus_info",
+        "patterns": ["Where can I find more information about Respondus and its policies?", "I want to know more about Respondus"],
+        "responses": ["You can find more information about Respondus and its policies on their official website or by contacting their customer support."]
+      },
+      {
+        "tag": "exam_webcam_microphone",
+        "patterns": ["How do I ensure my webcam and microphone are working properly?", "My webcam and microphone are not working"],
+        "responses": ["Ensure that your webcam and microphone are properly installed and functioning on your computer. You may need to test them in a different application to confirm they are working correctly."]
+      },
+      {
+        "tag": "exam_pause_resume",
+        "patterns": ["Can I pause or resume the exam if I need a break?", "I need to take a break during the exam"],
+        "responses": ["Yes, you can pause or resume the exam at any time. You can do this by clicking on the appropriate button in the exam interface."]
+      },
+      {
+        "tag": "exam_password_recovery",
+        "patterns": ["What happens if I forget my exam password?", "I can't remember my exam password"],
+        "responses": ["If you forget your exam password, you will need to contact your course instructor or academic advisor for assistance. They may be able to reset your password or provide you with a temporary one."]
+      },
+      {
+        "tag": "browser_extension",
+        "patterns": ["Can I use a browser extension or plugin with LockDown Browser?", "I want to use a browser extension with LockDown Browser"],
+        "responses": ["Yes, you can use browser extensions or plugins with LockDown Browser, but it's important to ensure they are compatible with the software and do not interfere with its functionality."]
+      },
+      {
+        "tag": "exam_screenshots",
+        "patterns": ["Can I take screenshots or copy text from the exam within LockDown Browser?", "I want to take a screenshot of the exam"],
+        "responses": ["Yes, you can take screenshots or copy text from the exam within LockDown Browser. This is typically done using the screenshot feature of your operating system or the browser itself."]
+      },
+      {
+        "tag": "browser_installation",
+        "patterns": ["How do I install and launch Respondus Lockdown Browser?", "I need to install LockDown Browser"],
+        "responses": ["To install and launch Respondus Lockdown Browser, you will need to follow the instructions provided by your institution or the software manufacturer. This typically involves downloading the software from a trusted source and running the installation file."]
+      },
+      {
+        "tag": "exam_features_disabled",
+        "patterns": ["What features are disabled during a locked exam?", "What can I do during a locked exam?"],
+        "responses": ["During a locked exam, certain features may be disabled to ensure the integrity of the exam. This could include the ability to take screenshots, use a browser extension, or access external resources. You should refer to the exam instructions or your course instructor for more information."]
+      }
+    ]
+  }

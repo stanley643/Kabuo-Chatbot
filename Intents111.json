@@ -1,0 +1,96 @@
+{"intents": [
+	{"tag": "greeting",
+     "patterns": ["Hi", "Hey", "Is anyone there?", "Hello", "Hay", "Sasa", "Good Evening", "Good afternoon"],
+     "responses": ["Hello how can i help you today", "Hi how can i help you today", "Hi there how can i help you today"]
+    },
+    {"tag": "goodbye",
+     "patterns": ["Bye", 
+     "See you later", 
+     "Goodbye"],
+     "responses": ["See you later", 
+     "Have a nice day",
+      "Bye! Come back again"]
+    },
+    {"tag": "thanks",
+     "patterns": ["Thanks", 
+     "Thank you",
+      "That's helpful", 
+      "Thanks for the help"],
+     "responses": ["Happy to help!",
+     "Any time!",
+      "My pleasure",
+       "You're most welcome!"]
+    },
+    {"tag": "about",
+     "patterns": ["Who are you?", 
+     "What are you?", 
+     "Who you are?" ],
+     "responses": ["I am a KABUO virtual assistant", 
+     "I'm KABUO chatbot"]
+ },
+
+ {"tag": "passwords",
+    "patterns": ["How can i reset my password",
+    "wrong username or password"
+     "I forgot my password", "how to deactivate an account", 
+   "Forgot password kindly assist", 
+   "I cant log in with default password 1234",
+    "I have not been able to have my password reset. Kindly facilitate",
+  "Please reset ",
+  "Kindly reset the password",
+  "What should I do coz I can't remember old password",
+  "I have not received a notification on password change",
+  "How can I do a self reset of my password"],
+
+    "responses": [ 
+    "Reset done use default password 1234 and change.",
+    "Use the forgot password functionality to reset your password.",
+    "check if you are using the right username, Your username should be your registration number in Capital letters"
+    "Use the forgot password functionality with your email  to reset your account."]
+   },
+
+   {"tag": "Authentication",
+        "patterns": ["Cant join meeting. Authentication failed",
+        "I cant join the zoom meeting",
+        "I got an error of Authentication failed",
+        "unable to join zoom meeting"],
+
+    "responses": [
+        "sign in with your kabarak email",
+        "Use the zoom official website"
+    ]},
+
+    {"tag": "audio/video",
+        "patterns": ["i am having trouble with my audio",
+        "I am having trouble with my video",
+        "Cant hear the speaker in zoom"],
+
+        "responses": [
+            "Double check that your speakers, michrophone and webcam are turned on and functioning properly. Ensure they are connented to the correct device settings in zoom",
+            "leave the meeting and rejoin"
+        ]},
+
+        {"tag": ""},
+
+
+
+
+
+
+
+
+        {"tag": "login",
+            "patterns": ["How do I log in to the Moodle",
+                "What is moodle"],
+
+            "responses": ["click on this link: https://moodle.kabarak.ac.ke/login",
+            "Moodle is a student online learning platform. it is found here: https://moodle.kabarak.ac.ke/login"]},
+
+        {}
+
+
+
+
+
+]
+}
