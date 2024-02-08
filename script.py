@@ -1,4 +1,4 @@
- const apiKey = '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';
+ const apiKey = '####';
 
 const knowledge_base = [
   {
