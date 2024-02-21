@@ -22,7 +22,7 @@
       },
       {
         "tag": "passwords",
-        "patterns": ["How can I reset my password", "wrong username or password", "I forgot my password", "how to deactivate an account", "Forgot password kindly assist", "I can't log in with default password 1234", "I have not been able to have my password reset. Kindly facilitate", "Please reset ", "Kindly reset the password", "What should I do coz I can't remember old password", "I have not received a notification on password change", "How can I do a self reset of my password"],
+        "patterns": ["How can I reset my password", "wrong username or password", "I forgot my password", "how to deactivate an account", "Forgot password kindly assist", "I can't log in with default password 1234", "I have not been able to have my password reset. Kindly facilitate", "Please reset ", "Kindly reset the password", "What should I do coz I can't remember old password", "I have not received a notification on password change", "How can I do a self reset of my password", "I forgot my moodle password"],
         "responses": ["Reset done use default password 1234 and change.", "Use the forgot password functionality to reset your password.", "check if you are using the right username, Your username should be your registration number in Capital letters", "Use the forgot password functionality with your email to reset your account."]
       },
       {
@@ -99,6 +99,21 @@
         "tag": "exam_features_disabled",
         "patterns": ["What features are disabled during a locked exam?", "What can I do during a locked exam?"],
         "responses": ["During a locked exam, certain features may be disabled to ensure the integrity of the exam. This could include the ability to take screenshots, use a browser extension, or access external resources. You should refer to the exam instructions or your course instructor for more information."]
+      },
+      {
+        "tag": "accessing_moodle",
+        "patterns": ["Is there a specific browser I can access the moodle "],
+        "responses": ["Any broswer can access the moodle. Visit the kabarak website"]
+      },
+      {
+        "tag": "Enrollment-key",
+        "patterns": ["How do I obtain an enrollment key for a course on moodle", "how do i get the enrollment key for a course", "where can I get an enrollment key"],
+        "responses": ["Enrollment key are given by a lecturer directly or via class representatives", "The lecturer will give you the enrollment key after they register the unit in the Kabuo"]
+      },
+      {
+        "tag": "Enrollment_key",
+        "patterns": ["How do i enroll a course in the moodle", "How do I enroll a unit", "I cannt enroll a unit"],
+        "responses": ["Login to the Kabarak moodle, go to Site home-->Course categories-->Then enter the course code in capital letters"]
       }
     ]
   }
